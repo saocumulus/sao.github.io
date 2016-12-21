@@ -1,0 +1,252 @@
+/* Asia project*/
+* {
+margin: 0;
+padding: 0;
+}
+
+/* Сгенерирован фон по пиксельному изображению из фотошоп*/
+body {
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d9e6f7+0,b5bac0+0,128aa7+0,128aa7+3,5ef0ff+3,11cee1+3,18cfe2+4,2dd4e5+5,4fdae9+7,baf0f7+13,daf8fa+14,f1fcfd+16,ffffff+17,40c6d3+17,38bbcd+21,1496b3+30,1191b1+32,0f8cad+48,0c77a1+87,0c739f+100 */
+    background: #d9e6f7; /* Old browsers */
+    background: -moz-linear-gradient(top, #d9e6f7 0%, #b5bac0 0%, #128aa7 0%, #128aa7 3%, #5ef0ff 3%, #11cee1 3%, #18cfe2 4%, #2dd4e5 5%, #4fdae9 7%, #baf0f7 13%, #daf8fa 14%, #f1fcfd 16%, #ffffff 17%, #40c6d3 17%, #38bbcd 21%, #1496b3 30%, #1191b1 32%, #0f8cad 48%, #0c77a1 87%, #0c739f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #d9e6f7 0%,#b5bac0 0%,#128aa7 0%,#128aa7 3%,#5ef0ff 3%,#11cee1 3%,#18cfe2 4%,#2dd4e5 5%,#4fdae9 7%,#baf0f7 13%,#daf8fa 14%,#f1fcfd 16%,#ffffff 17%,#40c6d3 17%,#38bbcd 21%,#1496b3 30%,#1191b1 32%,#0f8cad 48%,#0c77a1 87%,#0c739f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #d9e6f7 0%,#b5bac0 0%,#128aa7 0%,#128aa7 3%,#5ef0ff 3%,#11cee1 3%,#18cfe2 4%,#2dd4e5 5%,#4fdae9 7%,#baf0f7 13%,#daf8fa 14%,#f1fcfd 16%,#ffffff 17%,#40c6d3 17%,#38bbcd 21%,#1496b3 30%,#1191b1 32%,#0f8cad 48%,#0c77a1 87%,#0c739f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e6f7', endColorstr='#0c739f',GradientType=0 ); /* IE6-9 */
+}
+
+/* Сгенерирована директива для внешнего шрифта с открытой лицензией*/
+@font-face {
+    font-family: 'abyssinica_silregular';
+    src: url('../fonts/abyssinicasil-r-webfont.woff2') format('woff2'),
+         url('../fonts/abyssinicasil-r-webfont.woff') format('woff');
+}
+
+.wrapper {
+        margin: 0 auto;
+        width: 1000px;
+        background: #ffffff;
+        -webkit-box-shadow: 0px 9px 5px 10px rgba(68,148,156,0.46), 0px 4px 5px 0px rgba(0,0,0,1); /* Две тени для одного блока*/
+        -moz-box-shadow: 0px 9px 5px 10px rgba(68,148,156,0.46), 0px 4px 5px 0px rgba(0,0,0,1);
+        box-shadow: 0px 9px 5px 10px rgba(68,148,156,0.46), 0px 4px 5px 0px rgba(0,0,0,1);
+}   
+
+/*Раздел шапка макета: логотип, контакты, справа плавающее меню в виде ссылок с изображениями и подписями*/
+header {
+    border-bottom: 1px solid #128aa7;
+}
+
+.logo {
+    float: left;
+    display: block;
+    padding: 6px 0 0 0;
+}
+
+.logo a {
+    display: block;
+    line-height: 0; /* Убрать отступ внутри блока с изображением*/
+}
+
+.contacts {
+    float: right;
+    padding: 11px 30px 0 0;  
+}
+
+.contacts p {
+    line-height: 20px;  
+    font-family: 'abyssinica_silregular', sans-serif;
+    font-size: 12px;
+    color: #4b9db4;
+}
+
+.contacts span {
+    font-weight: bold;
+    color: #4b9db4;
+}
+
+.menu_countries { /*Плавающее горизонтальное меню с картинками справа*/
+    float: right;
+    clear: right;
+    padding: 18px 18px 8px 0;    
+}
+
+.menu_countries a {
+    display: block;
+    width: 56px; 
+    color: #4b9db4;
+}
+
+figure {
+    display:inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+figcaption {
+    text-align:center;
+    font-family: 'abyssinica_silregular', sans-serif;
+    font-size: 10px;
+    color: #4b9db4;
+} 
+
+.photo {
+    line-height: 0; /* Убрать отступ внутри блока с изображением*/
+    border-top: 1px solid #128aa7;
+    border-bottom: 1px solid #128aa7;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*Главное меню макета - горизонтальное с выпадающим списком и эффектами*/
+.main_menu {
+    border-top: 1px solid #cacbcb;
+    border-bottom: 2px solid #000;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(79,79,80,0.91);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(79,79,80,0.91);
+    box-shadow: 0px 4px 4px 0px rgba(79,79,80,0.91);
+    background: #323232;
+}
+
+.main_menu > li {
+    position: relative; /*задает положение меню относительно подменю*/
+    display: inline-block;
+    list-style: none;
+  /*padding-right: 60px;*/ /*Не удается выстроить пункты меню по горизонтали по разным ширинам, начинают выпадать на след строку*/
+}
+
+.main_menu > li:first-child {
+    padding-left: 65px;
+}
+
+.main_menu a {
+    display: block;
+    padding: 0 45px 0 8px;
+    line-height: 28px;
+    text-decoration: none;     /*Убираем подчеркивание*/
+    font-family: 'abyssinica_silregular', sans-serif;
+    font-size: 14px;
+    font-weight: 400; 
+    color: #ffffff;
+}
+
+.triangle {
+    padding-left: 4px;
+}
+
+.main_menu a:hover {
+    background: #303030;
+}
+
+.main_menu .sub_menu {
+    position: absolute; /*задает точное положение подменю относительно родительского*/
+    top: 31px;
+    list-style: none;     
+    display: none; 
+    
+    background: #303030; /* Фон подменю*/
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 1px 0px 0px rgba(255,255,255,1);
+    box-shadow: 0px 1px 0px 0px rgba(255,255,255,1), 0px 4px 4px 0px rgba(79,79,80,0.91);
+}
+
+li:hover .sub_menu {         /*Подменю при наведении курсора*/
+    display: block;     /*Подменю отображается при наведении курсора*/
+}
+
+.main_menu .sub_menu a {
+    padding-left: 7px;
+    padding-right: 43px;
+}
+
+.main_menu .sub_menu > a:hover {
+    padding-left: 10px;
+    color: #000;
+    background: #d5d5d5;
+    /*background: #303030;*/
+    font-weight: 400;
+}
+
+/* Трехколоночный макет*/
+.container {
+  width:1000px;
+  margin:0 auto;
+  background: url("faux-columns.png") repeat-y;
+  overflow: hidden;
+}
+
+.sidebar {
+    float: left;
+    overflow: hidden;
+    width: 30%;
+    padding-top: 12px;
+    padding-left: 14px;
+    padding-right: 24px;
+    border-bottom: 1px transparent;
+    border: 1px solid #d5d5d5;
+    box-sizing: border-box;
+    background: #edeef0 repeat-y 50% 0;
+    line-height: 24px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 18px;
+    color: #424c43;
+}
+
+p {
+    text-align: justify;
+    font-family: 'abyssinica_silregular', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #424c43;
+}
+
+.news {
+    float: right;
+    overflow: hidden;
+    width: 20%;
+    padding-top: 12px;
+    padding-left: 14px;
+    padding-right: 24px;
+    line-height: 24px;
+    border: 1px solid #d5d5d5;
+    border-bottom: 1px transparent;
+    box-sizing: border-box;
+    background: #edeef0;
+    
+}
+
+.content_main {
+    float: left;
+    overflow: hidden;
+    width: 50%; 
+    padding-top: 12px;
+    padding-left: 14px;
+    padding-right: 24px;
+    line-height: 24px;
+    box-sizing: border-box;
+    font-family: 'abyssinica_silregular', sans-serif;
+}
+
+/*Блок с изображением внизу страницы в браузере в body*/
+footer {
+    height: 34px;
+}
+
+.copyrights {
+    color: #fff;
+    vertical-align: bottom;
+    line-height: 20px;
+    text-align: center;
+    padding: 7px 0 11px 0;
+    font-family: 'abyssinica_silregular', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
