@@ -26,36 +26,28 @@ body{
 
 /*HEADER*/
 
+.link_block a{
+	display: block;
+	padding-top: 50px;
+
+}
+
 .menu{
 	margin-top: 37px;
 	background-image: linear-gradient(#5e5e5e, #444343); /*improve gradient*/
 
 }
 
-.menu li{	
+.menu li {	
 	display: inline-block;
 	list-style: none;
 	
 }
 
-/*different widths of cells .menu*/
-
-/*.main{
-	width: 144px;
-}	 
-
-.products{
-	width: 100px;
-}
-
-.about{
-	width: 149px;
-}*/
-
-.menu a{
+.menu a {
 	display: block;
 	line-height: 40px;
-	padding: 0 44px;   /* ссылка посередине*/
+	padding-right: 35px;
 	border-left: 1px solid transparent;   /*меню дергается при наведении - не помогает такой рецепт из инета*/
 	border-right: 1px solid transparent;
 	font-size: 15px;
@@ -70,7 +62,7 @@ body{
 .menu a:hover{
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
-	padding: 0 24px;
+	
 	background: #5e5e5e; /* Old browsers */
 	background: -moz-linear-gradient(top, #5e5e5e 0%, #535353 44%, #3f3f3f 55%, #2e2e2e 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #5e5e5e 0%,#535353 44%,#3f3f3f 55%,#2e2e2e 100%); /* Chrome10-25,Safari5.1-6 */
