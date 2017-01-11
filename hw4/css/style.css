@@ -54,7 +54,7 @@ header {
 
 .contacts p {
     line-height: 20px;  
-    font-family: 'abyssinica_silregular', sans-serif;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
     color: #4b9db4;
 }
@@ -85,7 +85,7 @@ figure {
 
 figcaption {
     text-align:center;
-    font-family: 'abyssinica_silregular', sans-serif;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-size: 10px;
     color: #4b9db4;
 } 
@@ -99,8 +99,11 @@ figcaption {
 
 .clearfix:after {
     content: "";
-    clear: both;
     display: block;
+    /*height: 0;*/
+    clear: both;
+    /*visibility: hidden;*/
+    
 }
 
 /*Главное меню макета - горизонтальное с выпадающим списком и эффектами*/
@@ -126,10 +129,10 @@ figcaption {
 
 .main_menu a {
     display: block;
-    padding: 0 45px 0 8px;
+    padding: 0 36px 0 8px;
     line-height: 28px;
     text-decoration: none;     /*Убираем подчеркивание*/
-    font-family: 'abyssinica_silregular', sans-serif;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     font-weight: 400; 
     color: #ffffff;
@@ -156,41 +159,69 @@ figcaption {
 }
 
 li:hover .sub_menu {         /*Подменю при наведении курсора*/
-    display: block;     /*Подменю отображается при наведении курсора*/
+    display: block;
+    white-space:nowrap;    /* отменяет перенос строк у li в подменю, */
+    z-index: 9999;     /*Подменю отображается при наведении курсора Поверх колонок с overflow:hidden, overflow: visible*/
 }
 
 .main_menu .sub_menu a {
-    padding-left: 7px;
-    padding-right: 43px;
+    /*display: block;*/
+    text-align: left;
+    /*padding-left: 7px;*/
+    /*padding-right: 43px;
+*/
 }
 
 .main_menu .sub_menu > a:hover {
-    padding-left: 10px;
+    display:block;
+    padding-left: 9px;
     color: #000;
     background: #d5d5d5;
     /*background: #303030;*/
     font-weight: 400;
 }
 
-/* Трехколоночный макет*/
-.container {
-  width:1000px;
-  margin:0 auto;
-  background: url("faux-columns.png") repeat-y;
-  overflow: hidden;
+/* Трехколоночный макет. Выравнивание 3 колонок по высоте*/
+.container3 {
+    float:left;
+    width:1000px;
+    position: relative;
+    overflow: hidden;
+    background: #edeef0;
+    border: 1px solid #d5d5d5;
+    border-bottom: 1px transparent;
+}
+
+.container2 {
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 21%;
+    background: #fff;
+    border-bottom: 1px transparent;
+    border: 1px solid #d5d5d5;
+}
+
+.container1 {
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 58%;
+    background: #edeef0;
+    border-bottom: 1px transparent;
+    border: 1px solid #d5d5d5;
 }
 
 .sidebar {
     float: left;
-    overflow: hidden;
-    width: 30%;
-    padding-top: 12px;
+    width: 18%;
+    position: relative;
+    left: 80%;
+    padding: 0 12px 8px 6px;
+    /*padding-top: 12px;
     padding-left: 14px;
-    padding-right: 24px;
-    border-bottom: 1px transparent;
-    border: 1px solid #d5d5d5;
+    padding-right: 24px;*/
     box-sizing: border-box;
-    background: #edeef0 repeat-y 50% 0;
     line-height: 24px;
 }
 
@@ -202,7 +233,7 @@ h1 {
 
 p {
     text-align: justify;
-    font-family: 'abyssinica_silregular', sans-serif;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #424c43;
@@ -210,29 +241,29 @@ p {
 
 .news {
     float: right;
-    overflow: hidden;
-    width: 20%;
-    padding-top: 12px;
+    width: 18%;
+    position: relative;
+    left: 77%;
+    padding: 0 12px 8px 6px;
+    /*padding-top: 12px;
     padding-left: 14px;
-    padding-right: 24px;
+    padding-right: 24px;*/
     line-height: 24px;
-    border: 1px solid #d5d5d5;
-    border-bottom: 1px transparent;
     box-sizing: border-box;
-    background: #edeef0;
-    
+       
 }
 
 .content_main {
     float: left;
-    overflow: hidden;
-    width: 50%; 
-    padding-top: 12px;
+    width: 54%; 
+    position: relative;
+    left: 83%;
+    padding: 0 12px 8px 6px;
+    /*padding-top: 12px;
     padding-left: 14px;
-    padding-right: 24px;
+    padding-right: 24px;*/
     line-height: 24px;
-    box-sizing: border-box;
-    font-family: 'abyssinica_silregular', sans-serif;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*Блок с изображением внизу страницы в браузере в body*/
@@ -246,7 +277,9 @@ footer {
     line-height: 20px;
     text-align: center;
     padding: 7px 0 11px 0;
-    font-family: 'abyssinica_silregular', sans-serif;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
     font-weight: 700;
 }
+
+
