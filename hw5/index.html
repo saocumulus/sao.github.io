@@ -7,47 +7,45 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="menu">
-			<ul class="menu_item">
-				<li><a href="#1">Meu YouBike</a></li>
-				<li><a href="#2">Vender</a></li>
-				<li><a href="#3">Forum</a></li>
-				<li><a href="#4">Contato</a></li>
+		<header>
+			<ul class="menu_item clearfix"> <!-- Задать меню с 7-1 из-за float:right -->
+				
+				<li><a class="entrar" href="#7">Ola!&nbsp<span class="underline">Entrar</span>&nbspou&nbsp<span class="underline">Cadastre-se</span></li> <!-- Выбор формы -->
+				
+				<li><a class="Minhas" href="#6">Minhas Ofertas</a></li>
 				<li><a href="#5">Ajuda</a></li>
-				<li><a class="Minhas" href="#6"><img class="flag" src="img/w_flag.png" alt="white flag"> Minhas Ofertas</a></li>
-				<li><a class="entrar" href="#7"><span>Ola! </span>Entrar</a></li>
-				<li><a class="entrar" href="#8"><span>ou </span>Cadastre-se</a></li>
-
+				<li><a href="#4">Contato</a></li>
+				<li><a href="#3">Forum</a></li>
+				<li><a href="#2">Vender</a></li>
+				<li><a href="#1">Meu YouBike</a></li>
 			</ul>
-		</div>
+		</header>
 		<div class="transbox">
 			<div class="Cadastre_header">
 				Cadastre-se
 			</div>
-			<div class="form">
-				<form action="/" method="POST">
-					<div class="facebook_button">
-						<button type="button" name="Facebook">Facebook</button> 
-					</div>
+			<div class="facebook">
+				<a class="facebook" href="#"></a>
+			</div>
+			<form action="/" method="POST">
+					
 					
 					<div>
-						ou
+						<span class="line_ou">ou</span>
 					</div>
-					<input type="text" name="" placeholder="First Name">
-					<input type="text" name="" placeholder="Last Name">
-					<input type="email" name="" placeholder="Email Address">
-					<input type="password" name="" placeholder="Choose Password">
-					<input type="password" name="" placeholder="Password Confirm">
-					<div>
-						<input type="checkbox" name="">
-						<span>Send me Youbike updates and tips</span>
-					</div>
-					<div>
-						<button type="submit">Create my account</button>
-					</div>
-					<p>By clicking the button above, you agree to the Terms of Service</p>
+					<input class="button" type="text" name="First Name" placeholder="First Name"><br>
+					<input class="button" type="text" name="Last Name" placeholder="Last Name"><br>
+					<input class="button" type="email" name="Email" placeholder="Email Address"><br>
+					<input class="button" type="password" name="Password" placeholder="Choose Password"><br>
+					<input class="button" type="password" name="Password" placeholder="Password Confirm"><br>
+					<input type="checkbox" name="get tips">
+						<span class="youbike_tips">Send me Youbike updates and tips</span><br>
+					
+					<input class="submit" type="submit" name="" value="Create my Account"><br>				
+						<p class="terms_agree">By clicking the button above, you agree to the Terms of Service</p>
+						<p class="terms_agree">View our Privacy Policy</p>
 				</form>
-			</div>
+			
 		</div>
 	</div>
 </body>

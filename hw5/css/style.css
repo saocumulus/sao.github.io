@@ -3,79 +3,118 @@
 	padding: 0;
 }
 .wrapper {
-	margin: 0 auto;
-    background: url(../img/background_img.png) #085699;
-    background-size: cover;
-    width: 100%;
+	width: 100%;
     height: 1064px;
+    /*background: url(../img/background_img.png) #085699;*/
+    background: url('../img/background_img.png') no-repeat center center;
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Сгенерирована директива для внешнего шрифта с открытой лицензией*/
 @font-face {
-    font-family: "abyssinica_silregular";
-    src: url('../fonts/abyssinicasil-r-webfont.woff2') format('woff2'),
-         url('../fonts/abyssinicasil-r-webfont.woff') format('woff');
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeue.eot');
+  src: url('../fonts/HelveticaNeue.woff2') format('woff2'),
+       url('../fonts/HelveticaNeue.woff') format('woff'),
+       url('../fonts/HelveticaNeue.ttf') format('truetype'),
+       url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg'),
+       url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
 }
-
-.menu {
-	margin-bottom: 200px;
-	background: url(../img/background_menu.png) repeat;
+@font-face {
+  font-family: 'HelveticaNeue-Bold';
+  src: url('../fonts/HelveticaNeue-Bold.eot');
+  src: url('../fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+       url('../fonts/HelveticaNeue-Bold.woff') format('woff'),
+       url('../fonts/HelveticaNeue-Bold.ttf') format('truetype'),
+       url('../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg'),
+       url('../fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 .menu_item {
-	margin: 0;
-	height: 39px;
-	padding-right: 20px;
-	text-align: right;
+	overflow: hidden;
+	background: url("../img/background_menu.png");
 }
 
 .menu_item > li {
-	display: inline-block;
+	float: right;
 	list-style: none;
-	padding: 0 13px;
-	font-family: "abyssinica_silregular", Tahoma, Verdana, sans-serif;
+}
+
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+/*.flag {
+	position: absolute;  Флаг все равно выскакивает из блока Minhas видно при наведении
+	
+}*/
+
+.menu_item .Minhas {
+	width: 118px;
+	text-align: center;
+	padding-left: 18px;
+	background: url("../img/w_flag.png") 0 50% no-repeat;
+	border-left: 1px solid #56a2dc;
+	font-family: "HelveticaNeue_Bold", Tahoma, Verdana, sans-serif;
 	font-size: 14px;
 	color: #fff;
 }
 
-.menu_item .Minhas {
-	position: relative;
-	width: 150px;
-	font-weight: bold;
-	color: #fff;
-}
-
-.flag {
-	position: absolute; /* Флаг все равно выскакивает из блока Minhas видно при наведении*/
-	top: 7px;
-    left: -10px;
-}
+/*В обратном порядке применяем свойства из-за обратного порядка пунктов меню float:tight
+li:nth-child(3) {
+	padding-left: 18px;
+	border-left: 1px solid #56a2dc;
+}*/
 
 .menu_item a {
 	display: block;
+	padding: 0 12px;
 	text-align: center;
 	text-decoration: none;
-	line-height: 39px;
-	font-family: "abyssinica_silregular", Tahoma, Verdana, sans-serif;
+	line-height: 36px;
+	font-family: "HelveticaNeue", Tahoma, Verdana, sans-serif;
 	font-size: 14px;
-	font-weight: bold;
 	color: #53a3db;
+	-moz-transition:  1s all; 
+	-webkit-transition:  1s all;  
+	-ms-transition: 1s all;  
+	-o-transition: 1s all;  
+	transition: 1s all; 
 	
 }
-li:nth-child(6) {
-	padding-left: 20px;
-	border-left: 1px solid #56a2dc;
-}
+
 
 .menu_item a:hover {
-	padding: 0 13px;
-    background: #4eabda;
-    font-weight: bold;
+	background: #4eabda;
+	margin: 0;
+    font-family: "HelveticaNeue-Bold", Tahoma, Verdana, sans-serif;
     color: #fff;
+    -moz-transition:  0.05s all; 
+	-webkit-transition:  0.05s all;  
+	-ms-transition: 0.05s all;  
+	-o-transition: 0.05s all;  
+	transition: 0.05s all; 
 }
 
-.menu_item .entrar:hover {
-	background: background: rgba(85,178,221,1);
+.menu_item li:first-child {
+	width: 205px;
+	box-sizing: border-box;
+	padding: 0;
+	margin-right: 20px;
+}
+
+.menu_item .entrar a:hover {
+	/*background: url("../img/w_flag.png") 0 50% no-repeat;*/
+	background: rgba(85,178,221,1);
 	background: -moz-linear-gradient(top, rgba(85,178,221,1) 0%, rgba(50,127,200,1) 50%, rgba(46,120,194,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(85,178,221,1)), color-stop(50%, rgba(50,127,200,1)), color-stop(100%, rgba(46,120,194,1)));
 	background: -webkit-linear-gradient(top, rgba(85,178,221,1) 0%, rgba(50,127,200,1) 50%, rgba(46,120,194,1) 100%);
@@ -84,37 +123,154 @@ li:nth-child(6) {
 	background: linear-gradient(to bottom, rgba(85,178,221,1) 0%, rgba(50,127,200,1) 50%, rgba(46,120,194,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55b2dd', endColorstr='#2e78c2', GradientType=0 );
 	border: 1px solid #51a0da;
-	text-decoration: underline;
-	font-weight: bold;
+	font-family: "HelveticaNeue-Bold", Tahoma, Verdana, sans-serif;
+	-moz-transition:  0.05s all; 
+	-webkit-transition:  0.05s all;  
+	-ms-transition: 0.05s all;  
+	-o-transition: 0.05s all;  
+	transition: 0.05s all;
+}	
+.underline {
+	border-bottom: solid 2px #aec8e5; /*толстые подчеркивания у 2 элементов в меню по ссылке*/
 }
 
-.menu_item span a .entrar:hover {
-	text-decoration: none; /* Не получается перебить свойство подчеркивания у текста перед ссылкой*/
-}
 /*Content*/
 
 div .transbox {
-	width: 558px;
+	width: 560px;
 	height: 610px;
-	margin: 0 auto;
-	background-color: #3e3c3c;
-	opacity: 0.6;
-	filter: alpha(opacity = 60); /*for IE-8*/
+	margin: 210px auto;
+	background-color: rgba(85, 85, 86, 0.6);
+	/*opacity: 0.6;
+	filter: alpha(opacity = 60); /*for IE-8*/*/
 }
 
 .Cadastre_header {
 	text-align: center;
-    line-height: 40px;
-    border: 1px solid #3e3c3c;
+    line-height: 60px;
+    border-bottom: 2px solid #dee1d8;
+    font-family: "HelveticaNeue", Tahoma, Verdana, sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #fff;
 
 }
 
-form {
-	width: 558px;
-	margin: 0 auto;
-	text-align: center;
-}
-input {
+.button {
 	width: 276px;
-	margin: 0 auto;
+	height: 32px;
+	padding: 12px 20px;
+	margin: 12px 25%;
+	border: none; /*Убрать ненужные рамки по умолчанию */
+	border-bottom: 2px solid #494948;
+    box-sizing: border-box;
+    background-color: #100f0f;
+    color: #a8a8a8;
+    font-size: 14px;
+    font-family: "HelveticaNeue", Tahoma, Verdana, sans-serif;
+    /*outline: none;*/
+}
+.button:hover {
+	background-color: #1b5288;
+	-webkit-box-shadow: 0px 0px 7px 4px rgba(121,172,222,1);
+-moz-box-shadow: 0px 0px 7px 4px rgba(121,172,222,1);
+box-shadow: 0px 0px 7px 4px rgba(121,172,222,1);
+	color: #fff;
+
+}
+
+.facebook {
+	width: 276px;
+	height: 32px;
+	margin: 36px auto;
+	background-image: url("../img/facebook_but.png");
+	border-radius: 3px;
+}
+
+.facebook a{
+	display: block;
+}
+
+.line_ou {
+	/*overflow: hidden; Спрятать часть линии*/
+	text-align: center;
+	margin-bottom: 14px;
+	color: #a8a8a8;
+	font-size: 14px;
+	text-transform: uppercase;
+    font-family: "HelveticaNeue", Tahoma, Verdana, sans-serif;
+}
+
+.line_ou:before,
+.line_ou:after { /* Создать линию справа и слева от блока с текстом.Обязательно пустой контент указать, иначе псевдоэлементы не покажутся*/
+	content:"";
+	position: relative;
+	width: 121px;
+	display: inline-block; /*элемент линия строчно-блочный*/
+    vertical-align: middle;
+    height: 2px;
+    
+}
+
+.line_ou:before {
+    /* Смещаем левую линию на % влево, чтобы линия 
+    ** встала рядом с текстом слева */
+    margin-left: 26%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    left: -5px;
+    content: " ";
+    background-color: #000;
+    box-shadow: 0px -2px 0px #666666;
+    
+}
+
+.line_ou:after {
+    /*/* Смещаем правую линию на % вправо, чтобы 
+    ** линия встала рядом с текстом справа */
+    margin-right: -26%;
+    right: -5px;
+    content: " ";
+    background-color: #000;
+    box-shadow: 0px -2px 0px #666666;
+}
+
+
+.submit {
+width: 150px;
+height: 36px;
+margin: 1px 190px 10px 190px;
+border: none;
+border-radius: 3px;
+background-image: url("../img/bluebut.png");
+/*background-color: #4ca9d9;*/
+/*opacity: 1;*/
+font-size: 14px;
+font-family: "HelveticaNeue-Bold", Tahoma, Verdana, sans-serif;
+color: #fff;
+
+}
+
+input[type="checkbox"] {
+	width: 14px;
+	height: 14px;
+	position: relative; /* относительно следующего текста за чекбоксом*/
+    top: 4px;
+	background-image: url("../img/checkbox.png");
+	margin: 10px 8px 20px 140px;
+}
+
+.youbike_tips {
+	margin-bottom: 20px; 
+	color: #b6b6b4;
+	font-size: 11px;
+	line-height: 16px;
+	font-family: "HelveticaNeue", Tahoma, Verdana, sans-serif;
+}
+
+.terms_agree {
+	text-align: center;
+	color: #b6b6b4;
+	font-size: 11px;
+	line-height: 16px;
+	font-family: "HelveticaNeue", Tahoma, Verdana, sans-serif;
 }
