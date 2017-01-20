@@ -59,20 +59,37 @@
 }*/
 
 .menu_item .Minhas {
-	width: 118px;
+	width: 160px;
+	box-sizing: border-box;
 	text-align: center;
-	padding-left: 18px;
-	background: url("../img/w_flag.png") 0 50% no-repeat;
+	padding-left: 43px;
+	margin-left: 10px;
+	background: url("../img/w_flag.png") 17px 50% no-repeat;
 	border-left: 1px solid #56a2dc;
-	font-family: "HelveticaNeue_Bold", Tahoma, Verdana, sans-serif;
+	font-family: "HelveticaNeue-Bold", Tahoma, Verdana, sans-serif;
 	font-size: 14px;
 	color: #fff;
+	transition: 0.05s all;
+}
+.menu_item .Minhas:hover {
+	/*width: 165px;*/ /* Меняем ширину блока из-за сдвигов и изменений св-в при ховере*/
+	background: url("../img/w_flag.png") 17px 50% no-repeat, rgba(85,178,221,1);
+
+	/*background: -moz-linear-gradient(top, rgba(85,178,221,1) 0%, rgba(50,127,200,1) 50%, rgba(46,120,194,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(85,178,221,1)), color-stop(50%, rgba(50,127,200,1)), color-stop(100%, rgba(46,120,194,1)));
+	background: -webkit-linear-gradient(top, rgba(85,178,221,1) 0%, rgba(50,127,200,1) 50%, rgba(46,120,194,1) 100%);
+	background: -o-linear-gradient(top, rgba(85,178,221,1) 0%, rgba(50,127,200,1) 50%, rgba(46,120,194,1) 100%);
+	background: -ms-linear-gradient(top, rgba(85,178,221,1) 0%, rgba(50,127,200,1) 50%, rgba(46,120,194,1) 100%);
+	background: linear-gradient(to bottom, rgba(85,178,221,1) 0%, rgba(50,127,200,1) 50%, rgba(46,120,194,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55b2dd', endColorstr='#2e78c2', GradientType=0 );
+	background: url("../img/w_flag.png") 18px 50% no-repeat, #4eabda;*/
+	transition: 0.05s all;
+
 }
 
-/*В обратном порядке применяем свойства из-за обратного порядка пунктов меню float:tight
-li:nth-child(3) {
-	padding-left: 18px;
-	border-left: 1px solid #56a2dc;
+/*В обратном порядке применяем свойства из-за обратного порядка пунктов меню float:tight*/
+/*li:nth-child(3) {
+	font-family: "HelveticaNeue_Bold", Tahoma, Verdana, sans-serif;
 }*/
 
 .menu_item a {
@@ -114,14 +131,14 @@ li:nth-child(3) {
 
 .menu_item .entrar a:hover {
 	/*background: url("../img/w_flag.png") 0 50% no-repeat;*/
-	background: rgba(85,178,221,1);
+	/*background: rgba(85,178,221,1);
 	background: -moz-linear-gradient(top, rgba(85,178,221,1) 0%, rgba(50,127,200,1) 50%, rgba(46,120,194,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(85,178,221,1)), color-stop(50%, rgba(50,127,200,1)), color-stop(100%, rgba(46,120,194,1)));
 	background: -webkit-linear-gradient(top, rgba(85,178,221,1) 0%, rgba(50,127,200,1) 50%, rgba(46,120,194,1) 100%);
 	background: -o-linear-gradient(top, rgba(85,178,221,1) 0%, rgba(50,127,200,1) 50%, rgba(46,120,194,1) 100%);
 	background: -ms-linear-gradient(top, rgba(85,178,221,1) 0%, rgba(50,127,200,1) 50%, rgba(46,120,194,1) 100%);
 	background: linear-gradient(to bottom, rgba(85,178,221,1) 0%, rgba(50,127,200,1) 50%, rgba(46,120,194,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55b2dd', endColorstr='#2e78c2', GradientType=0 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55b2dd', endColorstr='#2e78c2', GradientType=0 );*/
 	border: 1px solid #51a0da;
 	font-family: "HelveticaNeue-Bold", Tahoma, Verdana, sans-serif;
 	-moz-transition:  0.05s all; 
